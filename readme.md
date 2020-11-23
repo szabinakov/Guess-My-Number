@@ -10,4 +10,6 @@ and then with <br/>
 `open index.html` <br/>
 you are able to play the game in your browser! <br/>
 
+<p align="center">
 <img src="pic.png" alt="game" width="50%"/>
+</p>
