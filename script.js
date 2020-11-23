@@ -3,17 +3,17 @@
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 let highestScore = 0;
-document.querySelector(".hiddenNumber").textContent = secretNumber;
 
 document.querySelector(".check").addEventListener("click", function () {
   const myGuess = Number(document.querySelector(".myGuess").value);
+
   if (!myGuess) {
     document.querySelector(".message").textContent =
       "You have to type in a number!";
   } else if (myGuess === secretNumber) {
     document.querySelector(".message").textContent = "You win!";
     document.querySelector(".myHighestScore").textContent = score;
-
+    document.querySelector(".hiddenNumber").textContent = secretNumber;
     if (score > highestScore) {
       document.querySelector(".myHighestScore").textContent = score;
     }
@@ -41,7 +41,8 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".reset").addEventListener("click", function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20 + 1);
-  document.querySelector(".hiddenNumber").textContent = secretNumber;
+  document.querySelector(".hiddenNumber").textContent = "?";
   document.querySelector(".message").textContent = "Start the Guessing...";
+  document.querySelector(".myGuess").value = "";
   document.querySelector(".score").textContent = score;
 });

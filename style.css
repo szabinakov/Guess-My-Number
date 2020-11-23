@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+body {
+  background-color: rgb(0, 0, 104);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: "VT323", monospace;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 350px;
+  padding: 10px;
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+}
+header > .reset {
+  align-self: center;
+  background: #881400;
+  border-bottom: none;
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+header > h1 {
+  text-align: center;
+  font-size: 3.4rem;
+}
+header > .between {
+  text-align: center;
+  margin-top: -30px;
+  font-size: 1rem;
+}
+
+header > .hiddenNumber {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  font-size: 2rem;
+  text-align: center;
+}
+main {
+  align-self: center;
+  width: 350px;
+  padding: 10px;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+
+  display: flex;
+  flex-direction: column;
+}
+main > .top {
+  display: flex;
+  flex-direction: column;
+}
+main > .top > button,
+main > .top > input {
+  margin: 5px;
+  width: 65px;
+  align-self: center;
+}
+main > .top > button {
+  align-self: center;
+  background: #005800;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem;
+  width: 80px;
+}
+main > .message {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 0px;
+  margin-bottom: 0%;
+}
+
+main > .bottom {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
